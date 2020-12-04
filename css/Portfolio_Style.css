@@ -1,11 +1,19 @@
-/* Setting fade transition and default settings */
 body {
-    background-color: #f4f4f4;
+    background-color:white;
     transition: background-color 1s ease;
     height: 2000px;
+    display: flex;
+    flex-direction: column;
 }
 
-.first-box  {
+.companylogo    {
+    border:2px solid:#000000;
+    width: 100px;
+    left: 20px;
+
+}
+
+.firstbox  {
     border:1px solid black;
     height:1850px;
     width:1200px;
@@ -13,58 +21,34 @@ body {
     left:5%;
     position: absolute;
     background-repeat: no-repeat;
+}
+
+.mombox    {
+    border: 1px solid black;
+    position: relative;
+    top: 30%;
+    left: 25%;
+    width: 250px;
+    height: 235px;
 
 }
 
-  /* panel styles */
-    .panel {
-        /* min height incase content is higher than window height */
-        position: relative;
-        border: 1px solid black;
-        height: 100px;
-        width:80%;
-        top: 5px;
-        left: 10%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        /* outline: 10px solid hotpink; */
-        /* turn above on to see the edge of panels */
-    }
-    
-    /* colours */
-    .color-violet {
-        background-color: #7A4EAB;
-    }
-    .color-indigo {
-        background-color: #4332CF;
-    }
-    .color-blue {
-        background-color: #2F8FED;
-    }
-    .color-green {
-        background-color: #4DCF42;
-    }
-    .color-yellow {
-        background-color: #FAEB33;
-    }
-    .color-orange {
-        background-color: #F19031;
-    }
-    .color-red {
-        background-color: #F2293A;
-    }
-    
-    /* styling for demo, can ignore */
-    h1, h2 {
-        font-size: 3em;
-        letter-spacing: -0.05em;
-        line-height: 1.1;
-    }
-    p {
-        max-width: 30em;
-        margin-bottom: 1.618em;
-    }
-    a {
-        color: #4332CF;
-    }
+.sonbox    {
+    border: 1px solid black;
+    border-radius: 2vw;
+    margin-left: auto;
+    float: left;
+
+    cursor: pointer;
+    position: relative; 
+}
+
+#1sonbox {
+    background: url("./Image/carimage.jpg ")  no-repeat;
+}
+
+.clicked_sonbox {
+    color: ;borderborder-color: #4285f4;
+    color: #4285f4;
+    background: #e9f1fe;;
+}
