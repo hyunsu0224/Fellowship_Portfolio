@@ -2,33 +2,49 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/Portfolio_Style.css"> </link>
-        <script type="text/javascript" src="Javascipt/Portfolio_Script.js"></script>
-        <script src='http://code.jquery.com/jquery-3.3.1.js'></script>
         <title>ジョンヒョンスのポートフォリオ</title>    
+        <link rel="stylesheet" href="css/Portfolio_Style.css"> </link>
+        <script type="text/javascript" src="Javascipt/scroll_top.js"></script>
+        <script src='http://code.jquery.com/jquery-3.3.1.js'></script>
         <div class="companylogo">
             <img src="Image/fellowship logo.png" alt="株式会社　フェローシップ" width="75%">
-        </div> 
-    </head> 
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">prev</a></li>
+                <li><a href="#">next</a></li>
+            </ul>
+        </nav>
+        <div>
+            <span id="TopBtn" onclick="window.scrollTo(0,0);">top</span>
+        </div>
+    </head>
+
+
 
     <body>
         <div class="firstbox">
             <div class="mombox">
-                <input type="image" src class="sonbox" id="1sonbox"  style="margin-top: 10px; margin-left: 10px; margin-right: 10px; float: left;" src="Image/carimage.jpg">
-                
-                </input>
-                <input type="button|image" class="sonbox" style="margin-top: 10px; margin-left: 10px; margin-right: 10px; float: right;">
-                    <img src="" alt="">  
-                </input>
-                <input type="button|image" class="sonbox" style="margin-top: 10px; margin-left:10px; float: left;" >
-                    <img src="" alt="">
-                </input>
-                <input type="button|image" class="sonbox" style="margin-top: 10px; margin-left:20px; margin-right: 10px; float: right;" >
-                    <img src="" alt="">    
-                </input>
+                <div class="sonbox">
+                    <img src="Image/carimage.jpg" border="0"> 
+                </div>
+                <div class="sonbox">
+                    <img src="Image/Atom.PNG" alt="">  
+                </div>
+                <div class="sonbox">
+                    <img src="Image/css.png" alt="">
+                </div>
+                <div class="sonbox">
+                    <img src="Image/github image.png" alt="">    
+                </div>
             </div>
-
-
         </div>
+
+
+        <footer class="footer">
+            <p>@ copyright 2020 by ジョンヒョンスのポートフォリオ</p>
+            <p><a href="#">About</a> | <a href="#">Privacy Policy</a> | <a href="#">Content</a></p>
+        </footer>
     </body>
 </html>
