@@ -10,3 +10,6 @@ $('.sonbox').each(function(index){
 	$('.sonbox[sonbox-index!=' + index + ']').removeClass('clicked_sonbox');
 });
 });
+
+window.history.back()
+window.history.forward()

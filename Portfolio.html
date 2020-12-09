@@ -4,16 +4,16 @@
         <meta charset="UTF-8">
         <title>ジョンヒョンスのポートフォリオ</title>    
         <link rel="stylesheet" href="css/Portfolio_Style.css"> </link>
-        <script type="text/javascript" src="Javascipt/scroll_top.js"></script>
+        <script type="text/javascript" src="Javascipt/Portfolio_Script.js"></script>
         <script src='http://code.jquery.com/jquery-3.3.1.js'></script>
         <div class="companylogo">
             <img src="Image/fellowship logo.png" alt="株式会社　フェローシップ" width="75%">
         </div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">prev</a></li>
-                <li><a href="#">next</a></li>
+                <li><a >Home</a></li>
+                <li><a onclick="history.back()">prev</a></li>
+                <li><a onclick="history.forward()">next</a></li>
             </ul>
         </nav>
         <div>
@@ -25,6 +25,10 @@
 
     <body>
         <div class="firstbox">
+            <div class="introduction" onclick="location.href='html/Introductionpage.html'">
+                <img src="Image/myphoto.jpg" style="width: 250px; height: 300px;" alt="myphoto">
+                </img>
+            </div>
             <div class="mombox">
                 <div class="sonbox">
                     <img src="Image/carimage.jpg" border="0"> 

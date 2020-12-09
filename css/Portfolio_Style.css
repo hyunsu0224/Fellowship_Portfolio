@@ -1,5 +1,5 @@
 html {
-    height:100%;
+    height:1500px;
     margin: 0;
     padding: 0;
 }
@@ -13,10 +13,21 @@ nav ul{
     color: black;
     margin: 0px;
     padding: 0px;
+    cursor:pointer;
+    
+    
 }
 
 ul li{
     display: inline;
+    border:1px solid black;
+    width:150px;
+}
+
+.companylogo    {
+    border:2px solid:#000000;
+    width: 100px;
+    left: 20px;
 }
 
 #TopBtn {
@@ -33,7 +44,7 @@ ul li{
     text-align: center;
     border-radius: 5px;
     cursor: pointer;
-    
+    z-index: 33;
 }
 
 body {
@@ -42,19 +53,24 @@ body {
     transition: background-color 1s ease;
     display: flex;
     flex-direction: column;
-    min-height: 100%;
+    min-height: 80%;
+    min-width: 100%;
 }
 
-.companylogo    {
-    border:2px solid:#000000;
-    width: 100px;
-    left: 20px;
-
+.introduction {
+    position: absolute;
+    border-radius: 20vw;
+    left: 45%;
+    top: 10%;
+    width: 250px;
+    height: 300px;
+    vertical-align: middle;
+    overflow: hidden;
 }
 
 .firstbox  {
     border:1px solid black;
-    height: 1000px;
+    height: 1500px;
     width:1200px;
     top:50px;
     left:5%;
@@ -65,9 +81,9 @@ body {
 }
 
 .mombox    {
-    border: 1px solid black;      /*일단은 1px로 하고 마지막에 0으로변경*/
+    border: 0px solid black;      /*일단은 1px로 하고 마지막에 0으로변경*/
     position: absolute;
-    top: 300px;
+    top: 500px;
     left: 35%;
     width: 500px;
     height:300px;
@@ -79,7 +95,8 @@ body {
     border: 1px solid black;
     position: relative;             /*mombox와 부모자식관계설정*/
     border-radius: 2vw;             /*테두리 둥글게*/
-    margin-left: auto;          
+    margin-left: auto;  
+    margin-top:5px;        
     cursor: pointer;                /*커서를 올리면 포인트 생성*/
     display: inline-block;          /*부모객체에 안에 블럭이 정렬*/
     vertical-align: middle;         /*사진을 가운데에 정렬*/
@@ -94,10 +111,10 @@ body {
 
 .footer {
     position: absolute; 
-    left:0px; 
-    bottom:-1550px; 
+    min-width: 100%;
+    bottom:-850px; 
     height:50px; 
-    width:100%; 
+    width:; 
     border:1px solid: black;
     background-color: yellow;
     text-align: center;
