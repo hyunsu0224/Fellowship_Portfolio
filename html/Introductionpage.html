@@ -1,20 +1,72 @@
 <!DOCTYPE html>
+<html>
 <head>
     <meta charset="UTF-8">
     <title>Introduction</title>
     <link rel="stylesheet" href="IntroductionCss/Introdcution.css">
+    
+    <script type="text/javascript" src="IntroductionJavascript/Introduction.js"></script>
+
     <div class="companylogo">
         <img src="../Image/fellowship logo.png" alt="株式会社　フェローシップ" width="75%">
     </div>
+    
     <nav>
         <ul>
-            <li><a >Home</a></li>
+            <li><a onclick="location.href='../Portfolio.html'" >Home</a></li>
             <li><a onclick="history.back()">prev</a></li>
             <li><a onclick="history.forward()">next</a></li>
         </ul>
     </nav>
+
+    <div>
+        <span id="TopBtn" onclick="window.scrollTo(0,0);">top</span>
+    </div>
 </head>
+
 <body>
-    
+    <div class="bigbox">
+        <div class="rightbox">
+                <ul>이름</ul>
+                <ul>생년월일</ul>
+                <ul>출생지</ul>
+                <ul>현재사는곳</ul>
+                <ul>취미</ul>
+        </div>
+        <div class="rightphoto">
+            s
+        </div>
+
+        <div class="leftbox">
+                <h1>교내활동</h1>
+                <ul>대학교이름</ul>
+                <ul>학과,복수전공</ul>
+                <ul>동아리</ul>
+                <ul>봉사활동</ul>
+
+        </div>
+        <div class="leftphoto">
+            s
+        </div>
+
+        <div class="rightbox">
+            <h1>교외활동</h1>
+            <ul>여행</ul>
+            <ul>운동</ul>
+            <ul>여행사진 클릭시 넘어가도록</ul>
+        </div>
+        <div class="rightphoto">  
+            s
+        </div>
+
+        <div class="leftbox">
+            <h1>공부중인 내용</h1>
+            <ul>프론트엔드</ul>
+            <ul></ul>
+            <ul></ul>
+        </div><div class="leftphoto">
+            s
+        </div>
+    </div>
 </body>
 </html>

@@ -1,6 +1,5 @@
 html {
     height:1500px;
-
     margin: 0;
     padding: 0;
 }
@@ -25,8 +24,8 @@ ul li{
     width:150px;
 }
 
-.companylogo    {
-    border:2px solid:#000000;
+.companylogo  {
+    border:2px solid black;
     width: 100px;
     left: 20px;
 }
@@ -55,6 +54,64 @@ body {
     transition: background-color 1s ease;
     display: flex;
     flex-direction: column;
-    min-height: 80%;
+    overflow-x: hidden;
+    min-height: 100%;
     min-width: 100%;
+}
+
+.bigbox {
+    border: 1px solid black;
+    position: relative;
+    top: 20px;
+    height: 2500px;
+    width: 900px;
+    min-height: 100%;
+    min-width: 90%;
+}
+
+.rightbox {
+    border: 1px solid black;
+    position: relative;
+    margin-top: 10px;
+    top: 245px;
+    left: 60%;
+    height: 250px;
+    width: 400px;
+    align : right;
+}
+
+.rightphoto {
+    border: 1px solid black;
+    position: relative;
+    margin-top: 10px;
+    margin-right: 300px;
+    top: -10px;
+    left: 5%;
+    height: 250px;
+    width: 500px;
+    vertical-align: middle;
+
+}
+
+.leftbox {
+    border: 1px solid black;
+    position: relative;
+    margin-top: 10px;
+    top: 250px;
+    left: 5%;
+    height: 250px;
+    width: 400px;
+    align : left;
+}
+
+.leftphoto {
+    border: 1px solid black;
+    position: relative;
+    margin-top: 10px;
+    margin-right: 300px;
+    top: -10px;
+    left: 60%;
+    height: 250px;
+    width: 500px;
+    vertical-align: middle;
 }
