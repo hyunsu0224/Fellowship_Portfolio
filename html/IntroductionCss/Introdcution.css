@@ -78,21 +78,24 @@ body {
     height: 250px;
     width: 400px;
     align : right;
-
 }
 
-.rightphoto {
-    border: 1px solid black;
+.rightNormal {
+    border : 2px solid black;
     position: relative;
-    margin-top: 10px;
-    margin-right: 300px;
-    top: -10px;
-    left: 5%;
-    height: 250px;
-    width: 500px;
+    height: 300px;
+    width: 400px;
+    left: 10%;
     vertical-align: middle;
-    overflow: hidden;
+}
 
+
+
+.rightphoto {
+    position: relative;
+    height: 250px;
+    width: 2400px;
+    vertical-align: middle;
 }
 
 .leftbox {
@@ -107,14 +110,112 @@ body {
 }
 
 .leftphoto {
-    border: 1px solid black;
     position: relative;
-    margin-top: 10px;
-    margin-right: 300px;
-    top: -10px;
-    left: 60%;
     height: 250px;
-    width: 500px;
+    width: 2400px;
     vertical-align: middle;
+}
+
+.hobby {
+    float:left; 
+    width:600px;
+    height:250px;
+}
+
+/*****************************************/
+.left_animation_canvas{
+    border: 1px solid black;
     overflow: hidden;
+    position: relative;
+    width: 600px; 
+    height: 400px;
+    left: 50%;
+    top: auto;
+}
+
+.hobby_panel { 
+    position:absolute; 
+    top:250px; 
+    left:50px; 
+}
+
+.hobby_text { 
+    position:absolute; 
+    width:250px; 
+    height:150px; 
+}
+
+/*Control panel*/
+.control_panel{
+    border : 2px solid black;
+    position: absolute; top: 380px;
+    left: 270px; height: 13px;
+    overflow: hidden;
+}
+
+.control_button{
+    border : 2px solid black;
+    width: 12px; height: 46px;
+    position: relative;
+    float: left; cursor: pointer;
+    background:url('point_button.png');
+}
+
+.control_button:hover{
+    top: -16px;
+}
+
+.control_button.active{
+    top: -31px;
+}
+/***************************************right animation*/
+.right_animation_canvas{
+    border: 1px solid black;
+    overflow: hidden;
+    position: relative;
+    width: 600px; 
+    height: 400px;
+    left: 5%;
+    top: auto;
+}
+.hobby2 {
+    float:left; 
+    width:600px;
+    height:250px;
+}
+
+.hobby_panel2 { 
+    position:absolute; 
+    top:250px; 
+    left:50px; 
+}
+
+.hobby_text2 { 
+    position:absolute; 
+    width:250px; 
+    height:150px; 
+}
+
+/*Control panel*/
+.control_panel2{
+    border : 2px solid black;
+    position: absolute; top: 380px;
+    left: 270px; height: 13px;
+    overflow: hidden;
+}
+
+.control_button2{
+    border : 2px solid black;
+    width: 12px; height: 46px;
+    position: relative;
+    float: left; cursor: pointer;
+    background:url('point_button.png');
+}
+
+.control_button2:hover{
+    top: -16px;
+}
+
+.control_button2.active{
+    top: -31px;
 }
