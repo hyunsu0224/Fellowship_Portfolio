@@ -78,6 +78,7 @@ body {
     height: 250px;
     width: 400px;
     align : right;
+
 }
 
 .rightphoto {
@@ -90,6 +91,7 @@ body {
     height: 250px;
     width: 500px;
     vertical-align: middle;
+    overflow: hidden;
 
 }
 
@@ -114,4 +116,5 @@ body {
     height: 250px;
     width: 500px;
     vertical-align: middle;
+    overflow: hidden;
 }
