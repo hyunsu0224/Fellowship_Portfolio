@@ -1,7 +1,8 @@
 html {
-    height:1500px;
-    margin: 0;
-    padding: 0;
+    background: cadetblue;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    padding: 20px 0;
 }
 
 nav {
@@ -25,11 +26,12 @@ ul li{
 }
 
 .companylogo  {
+    position: relative;
     border:2px solid black;
-    width: 100px;
+    width: 50px;
+    height: 50px;
     left: 20px;
 }
-
 
 #TopBtn {
     position: fixed;
@@ -49,47 +51,38 @@ ul li{
 }
 
 body {
-    position: absolute;
-    background-color:white;
-    transition: background-color 1s ease;
-    display: flex;
-    flex-direction: column;
     overflow-x: hidden;
-    min-height: 100%;
-    min-width: 100%;
 }
 
 .bigbox {
+    background-color: white;
     border: 1px solid black;
     position: relative;
     top: 20px;
     height: 2500px;
-    width: 900px;
-    min-height: 100%;
-    min-width: 90%;
+    width: 90%;
+    max-width: 1400px;
+    margin:10px auto;
 }
 
 .rightbox {
     border: 1px solid black;
     position: relative;
-    margin-top: 10px;
-    top: 245px;
-    left: 60%;
+    margin-top: 20%;
+    margin-left: 60%;
     height: 250px;
     width: 400px;
-    align : right;
 }
 
-.rightNormal {
+.rightNormal {                /*google image*/
     border : 2px solid black;
     position: relative;
     height: 300px;
     width: 400px;
-    left: 10%;
+    margin-top: -20%;
+    margin-left: 10%;
     vertical-align: middle;
 }
-
-
 
 .rightphoto {
     position: relative;
@@ -103,7 +96,7 @@ body {
     position: relative;
     margin-top: 10px;
     top: 250px;
-    left: 5%;
+    left: 15%;
     height: 250px;
     width: 400px;
     align : left;
@@ -111,8 +104,10 @@ body {
 
 .leftphoto {
     position: relative;
+    border:1px solid black;
+    left: 60%;
     height: 250px;
-    width: 2400px;
+    width: 400px;
     vertical-align: middle;
 }
 
@@ -120,18 +115,12 @@ body {
     float:left; 
     width:600px;
     height:250px;
+    min-width: 600px;
+    min-height: 250px;
 }
 
 /*****************************************/
-.left_animation_canvas{
-    border: 1px solid black;
-    overflow: hidden;
-    position: relative;
-    width: 600px; 
-    height: 400px;
-    left: 50%;
-    top: auto;
-}
+
 
 .hobby_panel { 
     position:absolute; 
@@ -175,47 +164,79 @@ body {
     position: relative;
     width: 600px; 
     height: 400px;
-    left: 5%;
-    top: auto;
-}
-.hobby2 {
-    float:left; 
-    width:600px;
-    height:250px;
+    left: 10%;
 }
 
-.hobby_panel2 { 
-    position:absolute; 
-    top:250px; 
-    left:50px; 
-}
+@media ( max-width: 1500px ) {
+    .bigbox {
+        grid-template-columns: 1fr 1fr;
+        width: 1000px;
+        height: 2500px;
+        margin:0 auto;
+        align-items: center;
+    }
+    .rightbox {
+        width: 400px;
+        height: 250px;
+    }
+    .rightphoto {
+        width: 2400px;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+    .rightNormal{
+        width: 400px;
+        height: 300px;
+    }
+    .leftbox{
+        width: 400px;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+    .leftphoto{
+        width: 400px;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+    .right_animation_canvas{
+        width: 600px;
+        height: 400px;
+        margin-bottom: 20px;
+    }
+    }
 
-.hobby_text2 { 
-    position:absolute; 
-    width:250px; 
-    height:150px; 
-}
-
-/*Control panel*/
-.control_panel2{
-    border : 2px solid black;
-    position: absolute; top: 380px;
-    left: 270px; height: 13px;
-    overflow: hidden;
-}
-
-.control_button2{
-    border : 2px solid black;
-    width: 12px; height: 46px;
-    position: relative;
-    float: left; cursor: pointer;
-    background:url('point_button.png');
-}
-
-.control_button2:hover{
-    top: -16px;
-}
-
-.control_button2.active{
-    top: -31px;
-}
+@media ( min-width: 600px ) {
+    .bigbox {
+        width: 80%;
+        height: 2500px;
+        margin:0 auto;
+    }
+    .rightbox {
+        width: 320px;
+        height: 250px;
+    }
+    .rightphoto {
+        width: 2400px;
+        height: 300px;
+        margin-bottom: 20px;
+    }
+    .rightNormal{
+        width: 320px;
+        height: 250px;
+    }
+    .leftbox{
+        width: 320px;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+    .leftphoto{
+        width: 320px;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+    .right_animation_canvas{
+        width: 600px;
+        height: 400px;
+        margin-bottom: 20px;
+    }
+    }

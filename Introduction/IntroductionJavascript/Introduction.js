@@ -13,7 +13,7 @@ $(document).ready(function (){
 	function moveSlider(index){
 	//슬라이더를 이동합니다.
 	var willMoveLeft = -(index*600);
-	$('.leftphoto').animate({left: willMoveLeft }, 'slow');
+	$('.rightphoto').animate({left: willMoveLeft }, 'slow');
 	//control_button에 active 클래스를 부여/제거합니다.
 	$('.control_button[data-index=' + index + ']').addClass('active');//여기는 버튼을 누르면 파란색으로 변하게 함
 	$('.control_button[data-index!=' + index + ']').removeClass('active');//나머지 속성은 하얀색으로 변하게함
