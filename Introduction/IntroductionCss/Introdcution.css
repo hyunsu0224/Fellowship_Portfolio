@@ -26,10 +26,8 @@ ul li{
 }
 
 .companylogo  {
-    position: relative;
-    border:2px solid black;
-    width: 50px;
-    height: 50px;
+    border:1px solid black;
+    width: 100px;
     left: 20px;
 }
 
@@ -167,6 +165,8 @@ body {
     left: 10%;
 }
 
+
+/*
 @media ( max-width: 1500px ) {
     .bigbox {
         grid-template-columns: 1fr 1fr;
@@ -205,38 +205,47 @@ body {
     }
     }
 
-@media ( min-width: 600px ) {
+@media ( min-width: 500px ) {
     .bigbox {
         width: 80%;
         height: 2500px;
         margin:0 auto;
+        align-items: center;
     }
     .rightbox {
         width: 320px;
         height: 250px;
+        position: relative;
     }
     .rightphoto {
         width: 2400px;
         height: 300px;
         margin-bottom: 20px;
+        position: relative;
     }
     .rightNormal{
         width: 320px;
         height: 250px;
+        position: relative;
     }
     .leftbox{
         width: 320px;
         height: 250px;
         margin-bottom: 20px;
+        position: relative;
     }
     .leftphoto{
         width: 320px;
         height: 250px;
         margin-bottom: 20px;
+        position: relative;
     }
     .right_animation_canvas{
         width: 600px;
         height: 400px;
         margin-bottom: 20px;
+        position: relative;
     }
     }
+
+    */
