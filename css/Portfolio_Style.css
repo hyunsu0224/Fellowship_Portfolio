@@ -1,12 +1,5 @@
 html {
     background: cadetblue;
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    padding: 20px 0;
-}
-
-nav {
-
 }
 
 nav ul{
@@ -14,9 +7,8 @@ nav ul{
     color: black;
     margin: 0px;
     padding: 0px;
+    width: 20%;
     cursor:pointer;
-    
-    
 }
 
 ul li{
@@ -58,8 +50,8 @@ body {
     height: 1500px;
     width:90%;
     top:20px;
-    left:5%;
     padding-bottom: 100px;
+    margin: 0 auto;
 }
 
 #introduce {                        /*자기소개부분 반응형*/
@@ -68,30 +60,30 @@ body {
     }
 
 #introduction {
-    position: absolute;
+    position: relative;
     border:1px solid black;
     border-radius: 10vw;
-    left: 25%;
-    top: 10%;
-    width: 800px;
-    height: 400px;
+    margin: 100px auto 0 auto;
+    width: 50%;
+    height: 25%;
     vertical-align: middle;
     overflow: hidden;
     background: url(../image/introduceBackGround.jpg) no-repeat center/cover;     /*배경 이미지 위치 변경*/
 }
 
 .myphoto {
-    position: absolute;
+    position: relative;
     border-radius: 20vw;
     width: 250px;
     height: 300px;
     left: 35%;
     top: 40px;
     transition: all 1s;
+
     }
     
 #introduction:hover .myphoto {
-    left: 500px;
+    left: 450px;
 }
 
 #setumei {
@@ -121,7 +113,7 @@ body {
     position: absolute;
     left: 20px;
     top: 110px;
-    font-size: 30px;
+    font-size: 15px;
     font-weight: bold;
     opacity: 0;
     transform: scale(2, 2);
@@ -132,8 +124,58 @@ body {
     opacity: 1;
     transform: scale(1, 1);
 }
-    
+
 .txt2 {
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 140px;
+    font-size: 15px;
+    font-weight: bold;
+    opacity: 0;
+    transform: scale(2, 2);
+    transition: all 0.25s linear 0.2s;
+}
+#introduction:hover .txt2 {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+    
+
+
+.txt3 {
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 160px;
+    font-size: 15px;
+    font-weight: bold;
+    opacity: 0;
+    transform: scale(2, 2);
+    transition: all 0.25s linear 0.2s;
+}
+#introduction:hover .txt3 {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.txt4 {
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 180px;
+    font-size: 15px;
+    font-weight: bold;
+    opacity: 0;
+    transform: scale(2, 2);
+    transition: all 0.25s linear 0.2s;
+}
+#introduction:hover .txt4 {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.txtlast {
     display: block;
     position: absolute;
     left: -300px;
@@ -144,7 +186,7 @@ body {
     transition: all 0.5s 0.3s;
 }
     
-#introduction:hover .txt2 {
+#introduction:hover .txtlast {
     left: 60px;
 }
     
@@ -177,17 +219,10 @@ body {
     opacity: 1;
 }                                   /*여기까지 자기 소개 간단하게   */
 
-#explanation{
-    position: relative;
-    top:37%;  
-    left: 40%;
-}
-
 .mombox    {
     border: 0px solid black;      /*일단은 1px로 하고 마지막에 0으로변경*/
-    position: absolute;
-    top: 700px;
-    left: 35%;
+    position: relative;
+    margin: 200px auto 0 auto;
     width: 500px;
     height:300px;
     text-align: center;
@@ -214,13 +249,18 @@ body {
     background: #e9f1fe;;
 }
 
-.footer {
-    position: fixed; 
+#footer {
+    position: relative; 
     width: 100%;
-    bottom:0px; 
-    height:50px; 
+    height:50px;
+    margin-bottom: 0;
     border:1px solid black;
     background-color: pink;
     text-align: center;
 }
 
+.portfolioImg{
+    vertical-align: middle; 
+    width: 100%; 
+    height: 100%;
+}

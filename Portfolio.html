@@ -4,8 +4,11 @@
         <meta charset="UTF-8">
         <title>ジョンヒョンスのポートフォリオ</title>    
         <link rel="stylesheet" href="css/Portfolio_Style.css"> </link>
-        <script type="text/javascript" src="Javascipt/Portfolio_Script.js"></script>
-        <script src='http://code.jquery.com/jquery-3.3.1.js'></script>
+
+        
+    </head>
+
+    <body>
         <div class="companylogo">
             <a href="https://www.f-ship.jp/" target="_blank">
                 <img src="Image/fellowship logo.png" alt="株式会社　フェローシップ" width="100%">
@@ -13,7 +16,7 @@
         </div>
         <nav>
             <ul>
-                <li><a >Home</a></li>
+                <li><a onclick="location.href='Portfolio.html">Home</a></li>
                 <li><a onclick="history.back()">prev</a></li>
                 <li><a onclick="history.forward()">next</a></li>
             </ul>
@@ -21,24 +24,29 @@
         <div>
             <span id="TopBtn" onclick="window.scrollTo(0,0);">top</span>
         </div>
-    </head>
-
-
-
-    <body>
         <div class="firstbox">
-            
             <div id="introduction" >
-                <a href="../Fellowship_Portfolio/Introduction/Introductionpage.html">
+                <a href="Introduction/Introductionpage.html">
                 <img src="Image/myphoto.jpg" class="myphoto">
                 </a>
                 <img src="Image/fellowship logo.png" class="logo">
                 <p class="txt">
-                    d
+                    名前　JEONG HYEON SU (ジョンヒョンス）
                 </p>
-                <p class="txt2">Comming Soon!</p>
-                <p class="internetLogo">
-                    <i class="fab fa-chrome"></i>
+                <p class="txt2">
+                    生年月日　1996年1月4日
+                </p>
+                <p class="txt3">
+                    国籍　韓国
+                </p>
+                <p class="txt4">
+                    住所　東京都品川区南大井
+                </p>
+                
+                <p class="txtlast">Comming Soon!</p> 
+                
+                <!-- <p class="internetLogo">
+                    <i class="fab fa-chrome"></i> 
                     <i class="fab fa-internet-explorer"></i>
                     <i class="fab fa-firefox"></i>
                     <i class="fab fa-opera"></i>
@@ -47,34 +55,35 @@
                 <p class="device">
                     <i class="fas fa-desktop"></i>
                     <i class="fas fa-mobile-alt"></i>
-                </p>
+                </p> -->
             </div>
             
-            <div id="explanation">
+            <div class="explanation">
                 <h2 >사진을 click하면 더 자세한 내용</h2>
             </div>
             
             <div class="mombox">
                 <div class="sonbox" onclick="location.href='Project/Project.html'">
-                    <img src="Image/fellowship logo.png" style="vertical-align: middle; width: 100%; height: 100%;"> 
+                    <img src="Image/html.png" class="portfolioImg"> 
                 </div>
-                <div class="sonbox">
-                    <img src="Image/html.png" style="vertical-align: middle; width: 100%; height: 100%;">  
+                <div class="sonbox" onclick="location.href='Project/Project2.html">
+                    <img src="Image/css.png" class="portfolioImg">  
                 </div>
-                <div class="sonbox">
-                    <img src="Image/css.png" style="vertical-align: middle; width: 100%; height: 100%;">
+                <div class="sonbox" onclick="location.href='Project/Project3.html">
+                    <img src="Image/javascript.png" class="portfolioImg">
                 </div>
-                <div class="sonbox">
-                    <img src="Image/github image.png" style="vertical-align: middle; width: 100%; height: 100%;">    
+                <div class="sonbox" onclick="location.href='Project/Project4.html">
+                    <img src="Image/cWord.png" class="portfolioImg">    
                 </div>
             </div>
         </div>
-
-
-        
+        <div id="footer">
+            <p>@ copyright 2020 by ジョンヒョンスのポートフォリオ</p>
+            <p><a href="#">About</a> | <a href="#">Privacy Policy</a> | <a href="#">Content</a></p>
+        </div>
     </body>
-    <footer class="footer">
-        <p>@ copyright 2020 by ジョンヒョンスのポートフォリオ</p>
-        <p><a href="#">About</a> | <a href="#">Privacy Policy</a> | <a href="#">Content</a></p>
-    </footer>
+    
+
+    <script type="text/javascript" src="Javascipt/Portfolio_Script.js"></script>
+    <script src='http://code.jquery.com/jquery-3.3.1.js'></script>
 </html>
