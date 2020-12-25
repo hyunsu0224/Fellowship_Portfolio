@@ -1,0 +1,134 @@
+html {
+    background: cadetblue;
+}
+
+.mainNavi{
+    position: relative;
+    color: black;
+    margin: 0px;
+    padding: 0px;
+    width: 20%;
+    cursor:pointer;
+}
+
+.navigation{
+    display: inline;
+    border:1px solid black;
+    width:150px;
+}
+
+.companylogo    {
+    width:100px;
+    left:20px;
+}
+
+#TopBtn {
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    background: #000;
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 33;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.textCenter {
+    position: relative;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    width: 80%;
+    height: 3%;
+}
+
+.bigbox {
+    position: absolute;
+    background-color: white;
+    border:1px solid black;
+    position: relative;
+    height: 2500px;
+    width:90%;
+    top:20px;
+    padding-bottom: 100px;
+    margin: 0 auto;
+}
+
+.normalInformation {
+    position: relative;
+    border: 0px solid black;
+    width: 40%;
+    height: auto;
+    margin: 30px auto 0 auto;
+    text-align: center;
+}
+
+.mainText{
+    list-style: none;
+    font-size: 15px;
+    line-height: 40px;
+}
+
+.plan1 {
+    position: relative;
+    width: auto;
+    height: auto;
+    margin: 0 auto 0 auto;
+    left: -10%;
+}
+
+.projectPositiion {
+    border: 1px solid black;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    left: 20%;
+}
+
+.codingWord {
+    border: 1px solid black;
+    margin: 0 auto 0 auto;
+}
+
+.overview {
+    border: 1px solid black;
+    margin: 0 auto 1% auto;
+    width: 40%;
+    height: 10%;
+}
+.overview img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.projectMain {
+    border: 1px solid black;
+    margin: 0 auto 1% auto;
+    width: 50%;
+    height: 10%;
+}
+
+.projectMain video {
+    width : 40%;
+    height : 100%;
+}
+
+.temperature {
+    float: right;
+}
+
+.improvement {
+    border: 1px solid black;
+    margin: 0 auto 0 auto;
+    width: 60%;
+    height: 10%;
+}
