@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <title>ジョンヒョンスのポートフォリオ</title>    
         <link rel="stylesheet" href="css/Portfolio_Style.css"> </link>
-
-        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Kosugi&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -25,16 +25,14 @@
             <span id="TopBtn" onclick="window.scrollTo(0,0);">top</span>
         </div>
         <div class="firstbox">
-            <div id="introduction" >
-                <a href="Introduction/Introductionpage.html">
+            <div id="introduction">
                 <img src="Image/myphoto.jpg" class="myphoto">
-                </a>
                 <img src="Image/fellowship logo.png" class="logo">
                 <p class="txt">
                     名前　JEONG HYEON SU (ジョンヒョンス）
                 </p>
                 <p class="txt2">
-                    生年月日　1996年1月4日
+                    連絡書　080－4811－0342
                 </p>
                 <p class="txt3">
                     国籍　韓国
@@ -43,7 +41,7 @@
                     住所　東京都品川区南大井
                 </p>
                 
-                <p class="txtlast">Comming Soon!</p> 
+                <p class="txtlast">More Challenge!</p> 
                 
                 <!-- <p class="internetLogo">
                     <i class="fab fa-chrome"></i> 
@@ -57,23 +55,72 @@
                     <i class="fas fa-mobile-alt"></i>
                 </p> -->
             </div>
+
+            <p class="introductionPageMove">
+                <a href="Introduction/Introductionpage.html" target="_blank">
+                    <img class="moreInfo" src="image/moreInfo.png" alt="">
+                </a>
+            </p>
             
-            <div class="explanation">
-                <h2 >사진을 click하면 더 자세한 내용</h2>
+            <div class="projectHeadLine" id="projectLine">
+                <span >Project</span>
             </div>
-            
+
             <div class="mombox">
                 <div class="sonbox" onclick="location.href='Project/Project.html'">
                     <img src="Image/html.png" class="portfolioImg"> 
                 </div>
-                <div class="sonbox" onclick="location.href='Project/Project2.html">
+                <div class="sonbox" onclick="location.href='Project2/Project2.html'">
                     <img src="Image/css.png" class="portfolioImg">  
                 </div>
-                <div class="sonbox" onclick="location.href='Project/Project3.html">
+                <div class="sonbox" onclick="location.href='Project3/Project3.html'">
                     <img src="Image/javascript.png" class="portfolioImg">
                 </div>
                 <div class="sonbox" onclick="location.href='Project/Project4.html">
                     <img src="Image/cWord.png" class="portfolioImg">    
+                </div>
+            </div>
+
+            <div class="skillHeadLine" id="skillLine">
+                <span >Skill</span>
+            </div>
+            <div class="skillSheet">
+                <div class="skillCard">
+                    <div class="skillTitle">
+                        <h1>Hard Skills</h1>
+                    </div>
+                    <div class="skillPhoto">
+                        <ul class="skillList">
+                            <li><img src="./Image/html.png" alt="">HTML</li>
+                            <li><img src="./Image/cssMost.png" alt="">css</li>
+                            <li>as</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skillCard">
+                    <div class="skillTitle">
+                        <h1>Soft Skills</h1>
+                    </div>
+                    <div class="skillPhoto">
+                        <ul>
+                            <li>Jquery</li>
+                            <li>Vue.js</li>
+                            <li>React</li>
+                            <li>Node.js</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skillCard">
+                    <div class="skillTitle">
+                        <h1>Progressing</h1>
+                    </div>
+                    <div class="skillPhoto">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -82,8 +129,6 @@
             <p><a href="#">About</a> | <a href="#">Privacy Policy</a> | <a href="#">Content</a></p>
         </div>
     </body>
-    
-
     <script type="text/javascript" src="Javascipt/Portfolio_Script.js"></script>
     <script src='http://code.jquery.com/jquery-3.3.1.js'></script>
 </html>

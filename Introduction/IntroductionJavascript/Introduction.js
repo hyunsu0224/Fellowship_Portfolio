@@ -3,7 +3,7 @@ window.history.forward()
 
 $(document).ready(function (){
 	//초기 텍스트 위치를 지정합니다.
-	$('.hobby_text').css('left', -300).each(function (index){
+	$('.hobby_text').css('left', -400).each(function (index){
 	$(this).attr('data-index', index);//data-index 라는 커스텀 속성을 넣습니다 그 값은 index로
 	});
 	//컨트롤 버튼의 클릭 리스너 지정 및 data-index 할당
@@ -12,7 +12,7 @@ $(document).ready(function (){
 	});
 	function moveSlider(index){
 	//슬라이더를 이동합니다.
-	var willMoveLeft = -(index*600);
+	var willMoveLeft = -(index*400);
 	$('.rightphoto').animate({left: willMoveLeft }, 'slow');
 	//control_button에 active 클래스를 부여/제거합니다.
 	$('.control_button[data-index=' + index + ']').addClass('active');//여기는 버튼을 누르면 파란색으로 변하게 함
