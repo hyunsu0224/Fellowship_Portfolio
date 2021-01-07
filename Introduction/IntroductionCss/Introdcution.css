@@ -146,14 +146,14 @@ body {
     position: absolute; 
     top: 350px;
     left: 40%; 
-    height: 13px;  
+    height: 5px;  
 }
 
 .control_button{
     border : 0px solid black;
     top: 80%;
     width: 20px; 
-    height: 20px;
+    height: 10px;
     position: relative;
     float: left; 
     cursor: pointer;
@@ -165,11 +165,11 @@ body {
 }
 
 .control_button:hover{
-    top: 1px;
+    top: 0px;
 }
 
 .control_button.active{
-    top: -5px;
+    top: 0px;
 }
 /****************************************/
 

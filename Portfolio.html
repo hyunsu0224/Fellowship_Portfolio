@@ -9,18 +9,38 @@
     </head>
 
     <body>
-        <div class="companylogo">
-            <a href="https://www.f-ship.jp/" target="_blank">
-                <img src="Image/fellowship logo.png" alt="株式会社　フェローシップ" width="100%">
-            </a>
-        </div>
-        <nav>
-            <ul>
-                <li><a onclick="location.href='Portfolio.html">Home</a></li>
-                <li><a onclick="history.back()">prev</a></li>
-                <li><a onclick="history.forward()">next</a></li>
-            </ul>
-        </nav>
+        <ul class="navi">
+            <div class="companylogo" onclick="window.open('https://www.f-ship.jp/')">
+                <img src="./Image/fellowship logo.png" alt="株式会社　フェローシップ" width="30%">
+            </div>
+            <li class="textMain"><a class="textMenu" href="#">Home</a></li> 
+            <li class="textMain"><a class="textMenu" href="#">Contact</a></li>
+            <li class="textMain"><a class="textMenu" href="#">Project</a>
+                <ul class="serveNavi">    
+                    <li><a class="textMenu" href="Project/Project.html">Vehicle Smart Window</a></li>
+                    <li><a class="textMenu" href="Project2/Project2.html">Smart Pillow</a></li>
+                    <li><a class="textMenu" href="Project3/Project3.html">청해진</a></li>
+                    <li><a class="textMenu" href="#">勉強中</a></li>
+                </ul>
+            </li>
+            <li class="textMain"><a class="textMenu" href="#">프로필</a></li>
+        </ul>
+            <div class="backPhoto">
+                
+            </div>
+            <div class="photobox">
+            <div class="typing-txt">
+                <ul>
+                    <li>도전하는</li>
+                    <li>열정이 있는/li>
+                    <li>두려움을 모르는</li>
+                </ul>
+            </div>
+                <div style="font-size:50px;"> 저는 </div>
+                <p class="typing"></p> 
+                <div style="font-size:50px;"> 웹 개발자입니다. </div>
+            </div>
+        
         <div>
             <span id="TopBtn" onclick="window.scrollTo(0,0);">top</span>
         </div>
@@ -101,9 +121,9 @@
                     </div>
                     <div class="skillPhoto">
                         <ul class="skillList">
-                            <li><img src="./Image/html.png" alt="">HTML</li>
-                            <li><img src="./Image/cssMost.png" alt="">css</li>
-                            <li></li>
+                            <li class="skillLi"><img src="./Image/html.png" alt="">HTML</li>
+                            <li class="skillLi"><img src="./Image/cssMost.png" alt="">css</li>
+                            <li class="skillLi"></li>
                         </ul>
                     </div>
                 </div>
@@ -112,9 +132,9 @@
                         <h1>Soft Skills</h1>
                     </div>
                     <div class="skillPhoto">
-                        <ul>
-                            <li>Jquery</li>
-                            <li>Node.js</li>
+                        <ul class="skillList">
+                            <li class="skillLi">Jquery</li>
+                            <li class="skillLi">Node.js</li>
                         </ul>
                     </div>
                 </div>
@@ -123,10 +143,10 @@
                         <h1>Progressing</h1>
                     </div>
                     <div class="skillPhoto">
-                        <ul>
-                            <li>React</li>
-                            <li>Vue.js</li>
-                            <li>TypeScript</li>
+                        <ul class="skillList">
+                            <li class="skillLi">React</li>
+                            <li class="skillLi">Vue.js</li>
+                            <li class="skillLi">TypeScript</li>
                         </ul>
                     </div>
                 </div>
@@ -142,7 +162,7 @@
         </div>
         
     </body>
-
-    <script type="text/javascript" src="Javascipt/Portfolio_Script.js"></script>
-    <script src='http://code.jquery.com/jquery-3.3.1.js'></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
+    <script type="text/javascript" src="./Javascript/Portfolio_Script.js"></script>
+    
 </html>
