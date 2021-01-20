@@ -7,27 +7,29 @@
     <link rel="stylesheet" href="IntroductionCss/Introdcution.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Kosugi&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
-    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-    <script type="text/javascript" src="IntroductionJavascript/Introduction.js"></script>
-    <div class="companylogo">
-        <a href="https://www.f-ship.jp/" target="_blank">
-            <img src="../Image/fellowship logo.png"  alt="株式会社　フェローシップ" width="100%">
-        </a>
-    </div>
-    <nav>
-        <ul>
-            <li><a onclick="location.href='../index.html'" target"_blank">Home</a></li>
-            <li><a onclick="history.back()">prev</a></li>
-            <li><a onclick="history.forward()">next</a></li>
-        </ul>
-    </nav>
-
     <div>
         <span id="TopBtn" onclick="window.scrollTo(0,0);">top</span>
     </div>
 </head>
 
 <body>
+    <ul class="navi">
+        <div class="companylogo" onclick="window.open('https://www.f-ship.jp/')">
+            <img src="../Image/fellowship logo.png " alt="株式会社　フェローシップ" width="30%">
+        </div>
+        <li class="textMain"><a class="textMenu" href="../index.html">Home</a></li> 
+        <li class="textMain"><a class="textMenu" href="#">Contact</a></li>
+        <li class="textMain"><a class="textMenu" href="#">Project</a>
+            <ul class="serveNavi">    
+                <li><a class="textMenu" href="../Project/Project.html">Vehicle Smart Window</a></li>
+                <li><a class="textMenu" href="../Project2/Project2.html">Smart Pillow</a></li>
+                <li><a class="textMenu" href="../Project3/Project3.html">청해진</a></li>
+                <li><a class="textMenu" href="#">勉強中</a></li>
+            </ul>
+        </li>
+        <li class="textMain"><a class="textMenu" href="../Introduction/Introductionpage.html">프로필</a></li>
+    </ul>
+
     <div class="bigbox">
         <div class="rightbox">
                 <h1>自己紹介</h1>
@@ -107,7 +109,7 @@
                     </div>
                 </div>
             
-        <div class="leftbox2">
+        <!-- <div class="leftbox2">
             <h1>勉強する内容</h1>
             <ul>フロントエンド</ul>
             <ul>프론트엔드에서 자바스크립트를 공부</ul>
@@ -116,7 +118,10 @@
 
         <div class="leftphoto2">
             ㄴ
-        </div>
+        </div> -->
     </div>
+
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="IntroductionJavascript/Introduction.js"></script>
 </body>
 </html>
