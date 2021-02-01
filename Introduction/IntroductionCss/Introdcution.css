@@ -155,6 +155,11 @@ body {
     vertical-align: middle;
 }
 
+.volunteerPhoto {
+    width: 100%;
+    height: 100%;
+}
+
 .hobby {
     float:left; 
     width:400px;
