@@ -186,10 +186,16 @@ body {
     height: 10%;
 }
 
-.projectMain video {
-    width : 40%;
-    height : 100%;
+.videoExplanation {
+    align-items: center;
+    text-align: center;
 }
+
+.projectMain video {
+    width : 100%;
+    height : 80%;
+}
+
 
 .temperature {
     float: right;
@@ -199,5 +205,5 @@ body {
     border: 1px solid black;
     margin: 0 auto 0 auto;
     width: 60%;
-    height: 10%;
+    height: 12%;
 }
