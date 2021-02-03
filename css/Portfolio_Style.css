@@ -500,14 +500,21 @@ body {
     margin: 5px auto 0 auto; 
     border-bottom: 1px solid gray;
 }
-.skillPhoto img {
-    width: 20%;
-    height: 20%;
-    float: left;
-}
 
 .skillLi {
 
+}
+
+.skillImg {
+    
+    width: 20px;
+    height: 20px;
+}
+
+.skillLiImg {
+    float: right;
+    width: 20px;
+    height: 20px;
 }
 
 
