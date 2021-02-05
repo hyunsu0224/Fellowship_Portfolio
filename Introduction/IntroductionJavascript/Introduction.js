@@ -37,7 +37,7 @@ $(document).ready(function (){
 	moveSlider(index);
 	});
 	//초기 슬라이더 위치 지정
-	var randomNumber = Math.round(Math.random() * 3);
+	var randomNumber = Math.round(Math.random() * 2);
     moveSlider(randomNumber);
     
 	});
